@@ -5,12 +5,18 @@
 <link rel="manifest" href="/menuhtml/manifest.json">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="MENU"><head>
+<meta name="apple-mobile-web-app-title" content="App Panel 2.0"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Trang chính</title>
   <style>
-    body {
+      <title>App Panel iOS 2.0</title>
+  <style>
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/menuhtml/service-worker.js');
+  }
+</script>body {
       background-color: #000;
       color: white;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
